@@ -2,4 +2,7 @@
 set -e
 
 # Stop the running container (if any)
-echo "Hi"
+echo "stoping containers"
+sudo docker ps | awk '{print $1}'
+containerID=sudo docker ps | awk '{print $1}'
+sudo docker rm -f $containerID

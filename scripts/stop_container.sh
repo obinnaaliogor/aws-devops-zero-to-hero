@@ -7,3 +7,4 @@ sudo docker ps | awk '{print $1}'
 containerID=sudo docker ps | awk '{print $1}'
 sudo docker rm -f $containerID
 
+
